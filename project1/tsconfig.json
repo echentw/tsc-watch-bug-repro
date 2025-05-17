@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "target": "ES2020",
+        "lib": ["ES2020"],
+        "composite": true,
+        "outDir": "dist/project1",
+        "rootDir": "src",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["dummy-value-so-nothing-is-resolved"],
+            "project1/*": ["./src/*"]
+        },
+        "resolveJsonModule": true,
+        "tsBuildInfoFile": "dist/tsbuildinfo.json"
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["dist"]
+}
